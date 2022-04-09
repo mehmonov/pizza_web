@@ -122,4 +122,77 @@ header .header__bottom button i {
 header .header__bottom button:after {
   content: ' 0 sum';
 }
+
+#categories {
+  width: 1230px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 55px;
+}
+
+#categories a {
+  text-decoration: none;
+}
+
+#categories .categorie {
+  width: 100px;
+  height: 90px;
+  background-color: #fff;
+  border: 1px solid #F0F0F0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#categories .categorie i {
+  color: #FF7010;
+  font-size: 30px;
+}
+
+#categories .categorie h4 {
+  color: black;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#categories .categorie h4:focus {
+  color: #FF7010;
+}
+
+#categories .categorie:focus {
+  background-color: #FF7010;
+}
+
+#categories .categorie:focus i {
+  color: #fff;
+}
+
+#categories .categorie:active {
+  background-color: #FF7010;
+}
+
+#categories .categorie:active i {
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */

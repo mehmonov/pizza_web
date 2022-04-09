@@ -12,7 +12,10 @@ $bg-color:#F0F0F0;
 $header-word-spacing:40px;
 
 // funksiyalar
-
+@mixin container {
+    width: 1230px;
+    margin: 0 auto;
+}
 @mixin flex-box {
     display: flex;
     flex-direction: row;
@@ -103,5 +106,56 @@ header{
         }
    }
 
+}
+// Kategoriya
+#categories{
+    @include container();
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 55px;
+    a{
+        text-decoration: none;
+    }
+
+    .categorie{
+        width: 100px;
+        height: 90px;
+        background-color: #fff;
+        border: 1px solid #F0F0F0;
+        box-sizing: border-box;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: center;
+        align-items: center;
+        i{
+            color: $main-icon-color;
+            font-size: 30px;
+        }
+        h4{
+            color: black;
+            font-size: 20px;
+            font-weight: 100;
+        }
+        h4:focus{
+            color: #FF7010;
+        }
+    }
+    .categorie:focus{
+        i{
+            color: #fff;
+        }
+        background-color: #FF7010;
+    }
+    .categorie:active{
+        i{
+            color: #fff;
+        }
+        background-color: #FF7010;
+    }
 }
 
