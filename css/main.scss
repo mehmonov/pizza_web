@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+// variables - > o'zgaruvchilar
+
+
+$main-icon-color:#FF7010;
+$bg-color:#F0F0F0;
+$header-word-spacing:40px;
+// funksiyalar
+
+@mixin flex-box {
+    display: flex;
+    flex-direction: row;
+}
+@mixin header_top__left {
+    @include flex-box();
+    padding-top: 2px;
+    height: 100%;
+    
+}
+@mixin header_top__right {
+    @include flex-box();
+    padding-top: 2px;
+    height: 100%;
+}
+@mixin btn {
+    background-color: #FF7010;
+    padding: 10px 20px;
+
+}
+body{
+    background-color: $bg-color;
+    
+}
+// header style
+
+header{
+
+   width: 100%;
+   height: 100px;
+   background-color: #fff;
+ 
+   .header__top{
+       @include flex-box();
+        line-height: 2;
+       width: 80%;
+       
+       margin: 0 auto;
+       height: 40%;
+       justify-content: space-between;
+        i{
+            line-height: 2;
+            color: $main-icon-color;
+            padding-right: 6px;
+        }
+       .header-top-left{
+            @include header_top__left();
+          
+            h4,span{
+                margin-right: 20px;
+
+            }
+            
+        }
+       .header-top-right{
+           @include header_top__right();
+
+            p,span{
+                margin-left: 25px;
+                
+            }
+           
+       }
+
+   }
+   .header__bottom{
+        width: 80%;
+        margin: 0 auto;
+   }
+
+}
+
