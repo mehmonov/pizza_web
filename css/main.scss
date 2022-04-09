@@ -5,12 +5,9 @@
 
 
 // variables - > o'zgaruvchilar
-
-
 $main-icon-color:#FF7010;
 $bg-color:#F0F0F0;
 $header-word-spacing:40px;
-
 // funksiyalar
 @mixin container {
     width: 1230px;
@@ -158,4 +155,43 @@ header{
         background-color: #FF7010;
     }
 }
+
+// yangiliklar qism
+#news{
+    @include container();
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    .news_card{
+        width: 290px;
+       height: 343px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: flex-start;
+        align-items: center;
+        background: #FF7010;
+        border-radius: 12px;
+
+        img{
+            width: 209.04px;
+            height: 209.98px;
+            padding-top: 20px;
+        }
+        h4{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            align-items: center;
+            color: #FFFFFF;
+            padding-top: 40px;
+        }
+
+    }
+    
+}
+
 

@@ -195,4 +195,57 @@ header .header__bottom button:after {
 #categories .categorie:active i {
   color: #fff;
 }
+
+#news {
+  width: 1230px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#news .news_card {
+  width: 290px;
+  height: 343px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF7010;
+  border-radius: 12px;
+}
+
+#news .news_card img {
+  width: 209.04px;
+  height: 209.98px;
+  padding-top: 20px;
+}
+
+#news .news_card h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  padding-top: 40px;
+}
 /*# sourceMappingURL=main.css.map */
